@@ -1,0 +1,118 @@
+@media screen and (max-width:1200px) {
+    /* #Persons img{
+        width: 296px !important;
+    } */
+}
+
+@media screen  and (max-width:576px){
+   .topBar .col-sm-6{
+    justify-content: center !important;
+    margin: 5px 0;
+}
+}
+
+@media screen and (max-width:992px ) {
+    .logoImage{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    .header .col-lg-3  ,.header .col-lg-6{
+        margin: 5px 0 !important;
+    }
+    .swiper-slide h1 {
+        width: 100%;
+        top: 40%;
+          transform: translateY(-40%);
+    
+      } 
+      
+      .swiper-slide h3 {
+        font-size: 1.1rem;
+        width: 100%;
+        top: 50%;
+          transform: translateY(-50%) ;
+       }
+      .swiper-slide button {
+        top: 60%;
+        width: 200px;
+        color: #000;
+        outline: none;
+        border: none;
+        padding: 10px;
+        font-weight: bold;
+        background: yellow;
+          
+      }
+      /* #Persons img{
+        width: 335px !important;
+    }
+} */
+@media screen and (max-width:768px) {
+    .headerMenu ul{
+        margin-top: 5px;
+    }
+    .headerMenu .nav-item {
+        width: 100%;
+        text-align: left;
+        /* padding: 0 11px; */
+        box-sizing: border-box;}
+        .headerMenu .nav-link {
+         padding-left: 5px;}
+    .navSearvh{
+      
+        top: 30px;
+      
+    }
+   
+    .navSearvh input{
+         /* display: none; */
+         visibility: hidden;
+         position: static;
+         /* top: 0; */
+         right: 0px;
+         /* transition: 0.2s; */
+         
+         transform: translateY(0%);
+         
+    }
+    .activeInput{
+        visibility: visible !important;
+        /* top: 40px !important; */
+        width: 100%;
+        /* transition: 1s; */
+    }
+
+    .navbar-toggler{
+        border-color:white !important
+    }
+    #actionBox{
+        position: relative;
+        top: 0px;
+        z-index: 200;
+    }
+    #actionBox .col-md-4{
+        justify-content: center !important;
+    }
+    #Company{
+        /* position: relative; */
+        top: 0px;
+      
+      }
+      #Company h3{
+        text-align: center;
+      }
+      #Projects{
+        top: 0px !important;
+      }
+      #Projects h3 ,#Services h3{
+text-align: center;   
+padding-left: 0;   }
+    
+#Services{
+    position: relative;
+    top: 0px;
+  }
+  /* #Persons img{
+    width: 244px !important;
+} */

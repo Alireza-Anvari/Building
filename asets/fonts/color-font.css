@@ -1,0 +1,64 @@
+:root{
+--color-eggplant1:#4D4C7D;
+--color-orange1:#EC9B3B;
+--color-yellow1:#F7D716;
+--color-maroon1:#781D42;
+--color-brown1:#603601;
+--color-grey1:#E9E5D6;
+--color-green1:#5FD068;
+--color-green2:#116530;
+--color-green3:#57CC99;
+--color-blue1:#38A3A5;
+--color-green4:#F4FCD9;
+--color-navy1:#9FB8AD;
+}
+
+
+@font-face {
+    font-family: myFont1;
+    src: url('./Audiowide-Regular.ttf');
+  }
+
+  @font-face {
+    font-family: myFont1;
+
+    src: url('./Kanit-SemiBold.ttf');
+  }
+  @font-face {
+    font-family: myFont2;
+;
+    src: url('./KdamThmorPro-Regular.ttf');
+  }
+  @font-face {
+    font-family: myFont3;
+
+    src: url('./Lobster-Regular.ttf');
+  }
+  @font-face {
+    font-family: myFont4;
+
+    src: url('./OleoScript-Regular.ttf');
+  }
+  @font-face {
+    font-family: myFont5;
+
+    src: url('./Pacifico-number.ttf');
+  }
+
+    @font-face {
+      font-family: myFont6;
+
+    src: url('./RacingSansOne-number.ttf');
+  }
+  
+  @font-face {
+    font-family: myFont7;
+
+    src: url('./Righteous-Regular.ttf');
+  }
+  @font-face {
+    font-family: vazir;
+
+    src: url('./Vazir.ttf');
+  }
+

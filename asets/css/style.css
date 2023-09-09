@@ -1,0 +1,526 @@
+@import url("../fonts//color-font.css");
+.topBar {
+  background: #ebebeb;
+}
+.topBar i {
+  /* width: 0; */
+  /* flex: 1; */
+  margin: 0 10px !important;
+  position: relative;
+  z-index: 10;
+}
+.whatsapp:hover {
+  /* color: red;
+    font-size: 1.2rem;
+    transform: scale(1.2);
+    transition: 0.2s; */
+}
+.topBar i > span {
+  /* display:none; */
+  visibility: hidden;
+  position: absolute;
+  background: #232323;
+  top: 10px;
+  left: 50%;
+  padding: 5px 10px;
+  transition: 0.3s;
+  transform: translate(-50%, 0);
+  z-index: 1;
+  color: #fff;
+}
+.topBar i > span:before {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: #232323;
+  clip-path: polygon(50% 0, 0 100%, 100% 100%);
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.topBar i:hover span {
+  visibility: visible;
+  /* display: block; */
+  top: 30px;
+}
+
+.headerTop img {
+  width: auto;
+  height: 40px;
+}
+.headerTop i,
+.headerTop span {
+  display: block !important;
+}
+.brandTitle h3 {
+  margin: 0 !important;
+  /* font-size: 1.2rem; */
+  font-family: myFont7 !important;
+}
+.navSearvh {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  transform: translateY(-50%);
+}
+.navSearvh form {
+  margin: 0 !important;
+}
+.navSearvh input {
+  /* display: none; */
+  visibility: hidden;
+  position: absolute;
+  /* top: 0; */
+  right: 0px;
+  /* transition: 1s; */
+
+  transform: translateY(0%);
+}
+.activeInput {
+  visibility: visible !important;
+  top: 40px !important;
+  width: 200px;
+  transition: 1s;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.headerMenu .nav-item {
+  width: 12%;
+}
+.stickyMenu {
+  position: fixed !important;
+  top: -50px;
+  width: 100%;
+  animation-name: stickyMenu;
+  /* animation-delay: 0.2s; */
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  z-index: 1000;
+}
+@keyframes stickyMenu {
+  /* from{top:-100px} */
+  to {
+    top: 0;
+  }
+}
+.menuActive .active {
+  background: yellow;
+  color: #262626 !important;
+  font-size: 1.1rem;
+  font-weight: bold;
+  transition: 0.3s;
+  /* border-radius: 5px; */
+}
+.headerMenu ul {
+  flex: 1;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  position: relative;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-slide h1,
+.swiper-slide > h3,
+.swiper-slide > button {
+  position: absolute;
+  color: #fff;
+  /* transform: translateY(-20px); */
+}
+
+.swiper-slide h1 {
+  width: 100%;
+  top: 40%;
+  transform: translateY(-40%);
+}
+
+.swiper-slide h3 {
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.swiper-slide button {
+  top: 60%;
+  width: 200px;
+  color: #000;
+  outline: none;
+  border: none;
+  padding: 10px;
+  font-weight: bold;
+  background: yellow;
+  /* background: #ffb600; */
+}
+/* 
+  @keyframes animationH1{
+    to{top:40%}
+  }
+
+  .swiper-slide h3 {
+    width: 100%;
+    top: 50%;
+    left: -50%;
+    transform: translateX(-50%);
+    animation: animationH3 0.5s forwards 1 ;
+   
+  }
+  @keyframes animationH3{
+    to{left:50%}
+  }
+  .swiper-slide button {
+    top: 90%;
+    width: 200px;
+    color: #000;
+    outline: none;
+    border: none;
+    padding: 10px;
+    font-weight: bold;
+    background: yellow;
+    animation: animationButton 0.5s forwards 1 ;
+   
+  }
+  @keyframes animationButton{
+    to{top:65%}
+  }
+ */
+
+/* ////////////////////////////////////////////// start  actionBox css  ////////////////////////////////// */
+
+#actionBox {
+  position: relative;
+  top: -70px;
+  z-index: 200;
+}
+#actionBox .container,
+#actionBox .container-fluid {
+  border-bottom: 2px solid #232323;
+}
+
+/* ////////////////////////////////////////////// end  actionBox css  ////////////////////////////////// */
+
+/* ////////////////////////////////////////////// start  company section  ////////////////////////////////// */
+#Company {
+  position: relative;
+  top: -155px;
+  z-index: 300;
+}
+#Company .container,
+#Company .container-fluid {
+  position: relative;
+  top: 85px;
+  /* left: 50%;
+    transform: translateX(-50%); */
+  background: yellow;
+}
+#Company .container-fluid {
+  top: 0;
+}
+#Company p {
+  text-align: justify;
+}
+
+#Company .swiper {
+  width: 400px;
+  height: 300px;
+  /* padding: 50px; */
+}
+
+#Company .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+#Company .swiper-slide img {
+  display: block;
+  width: 100%;
+}
+#Company .swiper-button-prev:after,
+#Company .swiper-rtl .swiper-button-next:after,
+#Company .swiper-button-next:after,
+#Company .swiper-rtl .swiper-button-prev:after {
+  color: yellow;
+  font-size: 1.5rem;
+}
+
+/* ////////////////////////////////////////////// end  company section  ////////////////////////////////// */
+
+/* ////////////////////////////////////////////// start  project section  ////////////////////////////////// */
+
+#Projects {
+  background: dar;
+  position: relative;
+  top: -70px;
+  z-index: 0;
+}
+#Projects h3 {
+  padding-left: 100px;
+  padding-top: 10px;
+  box-sizing: border-box;
+}
+
+#Projects i {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+#Projects div span {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+#Projects h5 {
+  font-family: myFont6;
+  color: yellow;
+}
+
+/* ////////////////////////////////////////////// end  project section  ////////////////////////////////// */
+
+/* ////////////////////////////////////////////// start services section  ////////////////////////////////// */
+
+#Services {
+  position: relative;
+  top: -70px;
+}
+
+#Services h3 {
+  padding-left: 100px;
+  padding-top: 10px;
+  box-sizing: border-box;
+  font-weight: bold;
+}
+#servicesBoxImage img {
+  object-fit: contain;
+  width: 100%;
+  /* filter: blur(1px); */
+  transition: 0.4s;
+}
+
+#servicesBoxImage:hover img {
+  transform: scale(1.3);
+}
+#servicesBoxImage {
+  overflow: hidden;
+  position: relative;
+}
+
+#servicesCard {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  background: #5e5e5f42;
+  opacity: 1;
+  transition: 0.4s;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+}
+
+#servicesBoxImage:hover #servicesCard {
+  /* opacity: 1;
+  bottom: 50%;
+  transform: translateY(50%); */
+  /* transform:translate(-50%,-50%) scale(20.5); */
+  width: 100%;
+  height: 50%;
+}
+#Services h5 {
+}
+/*
+#servicesBoxImage:hover #Services img{
+  transform: scale(1.3);
+} */
+/* ////////////////////////////////////////////// end services section  ////////////////////////////////// */
+
+/* ////////////////////////////////////////////// start persons section  ////////////////////////////////// */
+
+#Persons h3 {
+  padding-left: 100px;
+  padding-top: 10px;
+  box-sizing: border-box;
+  font-weight: bold;
+}
+#Persons a {
+  text-decoration: underline;
+  text-decoration: none;
+  background: #232323;
+  /* padding: 2px 5px; */
+  font-size: 0.8rem;
+  color: #fff;
+}
+
+#Persons {
+  overflow-x: auto;
+  padding-left: 0 !important;
+  /* position: relative; */
+}
+#Persons img {
+  /* width: 263px;
+    height: 300px; */
+  width: 100%;
+}
+#Persons::-webkit-scrollbar {
+  display: none;
+}
+.containerProduct {
+  position: relative;
+  overflow: hidden;
+  /* left: 0; */
+}
+#Persons .product {
+  position: relative;
+  left: 0;
+  transition: 0.5s;
+}
+
+#Persons .button span {
+  font-size: 1rem;
+}
+#Persons .button a {
+  padding: 1px 10px;
+}
+#Persons .PersonsHeader i {
+  font-size: 1.7rem;
+}
+#Persons .PersonsHeader i:hover {
+  color: yellow;
+}
+.deActiveIconCarousel {
+  color: grey !important;
+}
+#Persons .row.PersonsHeader > * {
+  width: 0 !important;
+}
+
+/* //////////////////////////////////// resent Projects  //////////////////// */
+.shuffleButtonGroup {
+  padding: 20px !important;
+  border: 3px solid yellow;
+  background: #232323;
+  box-sizing: border-box !important;
+}
+.row.shuffleButtonGroup > * {
+  /* display: inline !important; */
+  width: auto !important;
+}
+.shuffleButtonGroup label {
+  display: inline-block;
+  color: #fff;
+  font-size: 14px;
+  padding: 6px 25px;
+  /* padding-top: 10px; */
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: all 0.3s;
+  cursor: pointer;
+  margin: 0;
+  /* background-color: yellow;
+        color: #232323; */
+}
+.shuffleButtonGroup input {
+  display: none;
+}
+.shuffleButtonGroup label.active {
+  background-color: yellow !important;
+  color: #232323 !important;
+}
+
+.shuffleWrapper > div {
+  height: 300px;
+  padding: 2px;
+  display: none;
+  overflow: hidden;
+  position: relative;
+}
+.shuffleWrapper img {
+  width: 100%;
+  height: 100%;
+  transition: 0.4s;
+}
+
+.shuffleWrapper > div:hover img {
+  transform: scale(1.5);
+}
+
+.shuffleWrapperDetails {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  transform: translateY(-50%);
+  top: 60%;
+  left: 10%;
+  z-index: 100;
+  transition: 0.3s;
+  opacity:0;
+}
+.shuffleWrapper>div i {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: yellow;
+  color: #232323;
+ padding:5px;
+  z-index: 200;
+  transition:0.3s;
+  opacity: 0;
+
+
+}
+.shuffleWrapper>div:hover  i{
+ opacity: 1 !important;
+}
+.shuffleWrapper>div:hover div{
+  opacity: 1 !important;
+  top: 50%;
+ }
+
+
+.shuffleWrapperDetails h4 {
+  background-color: yellow;
+  color: #232323;
+  padding: 3px 6px;
+}
+.shuffleWrapperDetails a {
+  margin-top: 5px;
+  display: inline !important;
+  background-color: #232323;
+  color: yellow;
+  text-decoration: none;
+  padding: 3px 10px;
+  width: 50%;
+  text-align: center;
+}
